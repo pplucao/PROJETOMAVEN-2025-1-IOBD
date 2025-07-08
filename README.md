@@ -2,13 +2,13 @@
 
 <h3 align="center"> usuarioDAO: </h3>
 
-| Funcionamento - Método Inserir | Funcionamento - Método Obter | 
-|---|---|
-| Estabelece conexão com o banco | Busca usuário por ID | 
-| Prepara statement SQL com parâmetros | Se encontrado, retorna objeto Usuario | 
-| Executa a inserção | Se não encontrado, retorna objeto vazio | 
-| Recupera o ID gerado | - | 
-| Atualiza o objeto usuário com o novo ID | - | 
+| Funcionamento                      | Detalhes                                  |
+|------------------------------------|-------------------------------------------|
+| Estabelece conexão com o banco     | Abre conexão com PostgreSQL              |
+| Prepara statement SQL              | Usa parâmetros para evitar SQL injection |
+| Executa a inserção                 | Retorna número de linhas afetadas        |
+| Atualiza o objeto usuário          | Define o ID gerado pelo banco            |
+
 
 <h3 align="center"> matriculaDAO: </h3>
 | Método inserir | Qual método realiza |
