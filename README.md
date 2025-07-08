@@ -21,6 +21,7 @@
 Utilizam SELECT COUNT(*) para verificar existência
 Retornam boolean indicando existência
 
+<h5 align="center"> Tentando matricular: Usuário não matricula e usuário matriculado </h5>
 ![Tentando matricular usuário já matriculado e um não matriculado](./img/TentativaMatricular.png)
 
 <h3 align="center"> cursoDAO: </h3>
@@ -32,8 +33,13 @@ Retornam boolean indicando existência
 
 ❗Tem os mesmos métodos de verificar usuario e curso existente que MatriculaDAO
 
+<h5 align="center"> Retorno dos cursos com avaliação JSON, total de alunos, média de avalições, comentários e notas </h5>
 ![Retorno dos cursos com avaliação JSON, total de alunos, média de avalições, comentários e notas](./img/listandoCursosDetalhes.png)
+
+<h5 align="center"> Adicionando comentário (retorno pelo terminal do vscode) </h5>
 ![Adicionando comentário (retorno pelo terminal do vscode)](./img/ComentAddVSCODE.png)
+
+<h5 align="center"> Adicionando comentário (retorno pelo banco) </h5>
 ![Adicionando comentário (retorno pelo banco)](./img/ComentarioAdicionado.png)
 
 <h3 align="center"> conteudoDAO: </h3>
@@ -48,5 +54,6 @@ Retornam boolean indicando existência
 
 ❗Para retornar o arquivo em KB foi criado um getTamanhoFormatado onde para de BYTES para KB, assim é chamado no toString formatado.
 
+<h5 align="center"> Retornando conteudo dos cursos</h5>
 ![Retornando conteudo dos cursos](./img/RetornoConteudoCurso.png)
 
