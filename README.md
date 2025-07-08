@@ -2,6 +2,7 @@
 
 <h3 align="center"> usuarioDAO: </h3>
 
+### Método Inserir
 | Funcionamento                      | Detalhes                                  |
 |------------------------------------|-------------------------------------------|
 | Estabelece conexão com o banco     | Abre conexão com PostgreSQL              |
