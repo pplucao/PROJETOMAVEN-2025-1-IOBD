@@ -50,10 +50,10 @@ Reutiliza os mesmos métodos de verificação (usuarioExiste, cursoExiste) que M
 *Cursos com avaliações JSON, total de aluno, notas e médias*
 
 ![Comentário adicionado](./img/ComentAddVSCODE.png)  
-*Saída no terminal do VS Code*
+*Adicionando comentário: Saída no terminal do VS Code*
 
 ![Comentário no banco](./img/ComentarioAdicionado.png)  
-*Visualização direta no banco de dados*
+*Comentário adicionado: Visualização direta no banco de dados*
 
 <h3 align="center"> conteudoDAO: </h3>
 
