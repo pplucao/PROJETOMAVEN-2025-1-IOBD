@@ -10,38 +10,50 @@
 | Executa a inserção                 | Retorna número de linhas afetadas        |
 | Atualiza o objeto usuário          | Define o ID gerado pelo banco            |
 
+### Método Obter
+| Funcionamento                     | Detalhes                                  |
+|------------------------------------|-------------------------------------------|
+| Busca usuário por ID               | Usa SELECT com WHERE id=?                |
+| Retorna objeto Usuario             | Popula todos os campos se encontrado     |
+| Retorna objeto vazio               | Se nenhum usuário for encontrado         |
+
+
 
 <h3 align="center"> matriculaDAO: </h3>
-| Método inserir | Qual método realiza |
-|---|---|
-| Verifica se matrícula já existe | matriculaJaExiste |
-| Verifica se usuário existe | usuarioExiste |
-| Verifica se curso existe| cursoExiste |
 
-❗Como é feito a verificação dos métodos:
-Utilizam SELECT COUNT(*) para verificar existência
-Retornam boolean indicando existência
+### Método inserirMatricula
+| Validação                         | Método auxiliar          |
+|------------------------------------|--------------------------|
+| Verifica se matrícula já existe    | matriculaJaExiste()      |
+| Verifica se usuário existe         | usuarioExiste()          |
+| Verifica se curso existe           | cursoExiste()            |
 
-<h5 align="center"> Tentando matricular: Usuário não matricula e usuário matriculado </h5>
-![Tentando matricular usuário já matriculado e um não matriculado](./img/TentativaMatricular.png)
+**Como é feita a verificação**:  
+Todos os métodos auxiliares utilizam `SELECT COUNT(*)` e retornam `boolean` indicando existência.
+
+![Tentativa de matrícula](./img/TentativaMatricular.png)  
+*Tentando matricular usuário já matriculado e um não matriculado*
 
 <h3 align="center"> cursoDAO: </h3>
-| Método listarCursosComDetalhes | Método adicionarComentario |
-|---|---|
-| Calcula média de avaliações extraindo do JSONB | Cria novo comentário como objeto JSON |
-| Conta alunos matriculados | Adiciona ao array existente |
-| Agrupa por curso | Trata caso onde avaliação é null (COALESCE) |
 
-❗Tem os mesmos métodos de verificar usuario e curso existente que MatriculaDAO
+### Métodos Principais
+| listarCursosComDetalhes            | adicionarComentario               |
+|-------------------------------------|------------------------------------|
+| Calcula média de avaliações (JSONB) | Cria novo comentário como objeto JSON |
+| Conta alunos matriculados           | Adiciona ao array existente       |
+| Agrupa resultados por curso         | Trata casos null com COALESCE     |
 
-<h5 align="center"> Retorno dos cursos com avaliação JSON, total de alunos, média de avalições, comentários e notas </h5>
-![Retorno dos cursos com avaliação JSON, total de alunos, média de avalições, comentários e notas](./img/listandoCursosDetalhes.png)
+**Observação**:  
+Reutiliza os mesmos métodos de verificação (usuarioExiste, cursoExiste) que MatriculaDAO.
 
-<h5 align="center"> Adicionando comentário (retorno pelo terminal do vscode) </h5>
-![Adicionando comentário (retorno pelo terminal do vscode)](./img/ComentAddVSCODE.png)
+![Listagem de cursos](./img/listandoCursosDetalhes.png)  
+*Cursos com avaliações JSON, total de alunos e médias*
 
-<h5 align="center"> Adicionando comentário (retorno pelo banco) </h5>
-![Adicionando comentário (retorno pelo banco)](./img/ComentarioAdicionado.png)
+![Comentário adicionado](./img/ComentAddVSCODE.png)  
+*Saída no terminal do VS Code*
+
+![Comentário no banco](./img/ComentarioAdicionado.png)  
+*Visualização direta no banco de dados*
 
 <h3 align="center"> conteudoDAO: </h3>
 
