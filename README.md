@@ -57,16 +57,19 @@ Reutiliza os mesmos métodos de verificação (usuarioExiste, cursoExiste) que M
 
 <h3 align="center"> conteudoDAO: </h3>
 
-✅ Gerencia conteúdos dos cursos (vídeos, PDFs, etc).
+### Responsabilidades
+- Gerencia conteúdos dos cursos (vídeos, PDFs, etc)
+- Fornece informações sobre tamanho e tipo de arquivos
 
-| Método buscarConteudosPorCurso |
-|---|
-| Retorna lista de conteúdos | 
-| Calcula tamanho do arquivo com LENGTH() | 
-| Não carrega o arquivo binário por padrão (apenas metadados) | 
+### Método buscarConteudosPorCurso
+| Funcionalidade                     | Detalhes                                  |
+|------------------------------------|-------------------------------------------|
+| Retorna lista de conteúdos         | Inclui todos os metadados                |
+| Calcula tamanho do arquivo         | Usa LENGTH(arquivo)                      |
+| Não carrega binários por padrão    | Apenas metadados são retornados          |
 
-❗Para retornar o arquivo em KB foi criado um getTamanhoFormatado onde para de BYTES para KB, assim é chamado no toString formatado.
+**Conversão de tamanho**:  
+O método `getTamanhoFormatado()` converte bytes para KB/MB e é usado no `toString()`.
 
-<h5 align="center"> Retornando conteudo dos cursos</h5>
-![Retornando conteudo dos cursos](./img/RetornoConteudoCurso.png)
-
+![Conteúdos do curso](./img/RetornoConteudoCurso.png)  
+*Exemplo de retorno de conteúdos*
