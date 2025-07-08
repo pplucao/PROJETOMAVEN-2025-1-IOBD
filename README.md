@@ -47,7 +47,7 @@ Todos os métodos auxiliares utilizam `SELECT COUNT(*)` e retornam `boolean` ind
 Reutiliza os mesmos métodos de verificação (usuarioExiste, cursoExiste) que MatriculaDAO.
 
 ![Listagem de cursos](./img/listandoCursosDetalhes.png)  
-*Cursos com avaliações JSON, total de alunos e médias*
+*Cursos com avaliações JSON, total de aluno, notas e médias*
 
 ![Comentário adicionado](./img/ComentAddVSCODE.png)  
 *Saída no terminal do VS Code*
