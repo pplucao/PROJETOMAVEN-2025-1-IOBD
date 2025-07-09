@@ -14,7 +14,7 @@ O sistema é uma aplicação Java para gestão de cursos online, com persistênc
 * Buscar conteudo de curso
 
 Aplicação feita com banco de dados PostgreSQL e desenvolvida em Java com JDBC (Maven).
----
+***
 <h1> REQUISITOS E DEPENDÊNCIAS </h1>
 *O projeto utiliza as seguintes dependências principais, gerenciadas pelo Maven:*
 
@@ -31,7 +31,7 @@ Aplicação feita com banco de dados PostgreSQL e desenvolvida em Java com JDBC 
 *Instalação das Dependências do Maven*
 `mvn clean install` -> No terminal
 
----
+***
 
 <h1> ESTRUTURA E FUNCIONAMENTO DO PROJETO </h1>
 ### Camadas Principais
@@ -84,7 +84,7 @@ __Caso 2: Listar conteúdos do curso__
 2. __Facilidade de manutenção:__ Modificações isoladas por camada.
 3. __Escalabilidade:__ Possibilidade de substituir componentes (ex: JPA no lugar de JDBC)
 
----
+***
 
 <h1> CLASSES DA CAMADA DE PERSISTENCIA </h1>
 <h3> ConexaoPostgreSQL </h3>
@@ -183,7 +183,7 @@ O método `getTamanhoFormatado()` converte bytes para KB/MB e é usado no `toStr
 ![Conteúdos do curso](./img/RetornoConteudoCurso.png)  
 *Exemplo de retorno de conteúdos*
 
---- 
+***
 
 ### Padrões comuns
 1. *Conexões:* Todas as DAOs usam  `ConexaoPostgreSQL`
