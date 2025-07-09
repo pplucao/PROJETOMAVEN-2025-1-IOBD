@@ -1,7 +1,7 @@
 <h1> VISÃO GERAL DO SISTEMA </h1>
 
 O sistema é uma aplicação Java para gestão de cursos online, com persistência em PostgreSQL, seguindo o padrão DAO (Data Access Object) para separar a lógica de negócios do acesso a dados.
----
++++
 <h1> FUNCIONALIDADES </h1>
 
 * Cadastrar usuário
