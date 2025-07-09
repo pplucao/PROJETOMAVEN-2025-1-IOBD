@@ -39,12 +39,16 @@ Aplicação feita com banco de dados PostgreSQL e desenvolvida em Java com JDBC 
 ### Camadas Principais
 
 1. Camada de Modelos (negócio):
+   
 __Classes:__
+
 * Conteudo.java: Modela conteúdos educacionais (vídeos, PDFs, imagens).
 * Curso.java: Representa cursos oferecidos na plataforma.
 * Matricula.java: Gerencia a relação entre usuários e cursos.
 * Usuário.java: Modela os usuários do sistema.
+  
 __Características:__
+
 * Contém apenas atributos e lógica básica de negócio.
 * Focadas em estrutura de dados.
 * Relacionamentos refletem a estrutura do banco de dados.
@@ -56,14 +60,20 @@ __Classes:__
 * CursoDAO.java: Gestão de cursos e avaliações JSON.
 * MatriculaDAO.java: Controle de matrículas.
 * UsuarioDAO.java: Operações com usuários.
+  
 __Padrões utilizados:__
+
 * JDBC para acesso a dados.
 * Prepared Statements para segurança.
 
 3. Camada de Apresentação
+   
 __Classe principal:__
+
 * Main.java: Classe de entrada do sistema.
+  
 __Responsabilidades:__
+
 * Demonstrar funcionalidades do sistema.
 * Testar integração entre camadas.
 * Simular fluxos de uso.
