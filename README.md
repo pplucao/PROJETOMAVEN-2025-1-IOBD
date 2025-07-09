@@ -54,7 +54,9 @@ __Características:__
 * Relacionamentos refletem a estrutura do banco de dados.
 
 2. Camada de Persistência (DAO)
+   
 __Classes:__
+
 * ConexaoPostgreSQL.java: Gerencia conexões com o banco.
 * ConteudoDAO.java: Operações com conteúdos.
 * CursoDAO.java: Gestão de cursos e avaliações JSON.
