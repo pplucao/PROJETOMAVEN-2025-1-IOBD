@@ -17,7 +17,7 @@ Aplicação feita com banco de dados PostgreSQL e desenvolvida em Java com JDBC 
 ***
 <h1> REQUISITOS E DEPENDÊNCIAS </h1>
 
-__O projeto utiliza as seguintes dependências principais, gerenciadas pelo Maven:__
+*O projeto utiliza as seguintes dependências principais, gerenciadas pelo Maven:*
 
 * PostgreSQL JDBC MAVEN: Para garantir uma conexão segura com o banco PostgreSQL, suporte a prepared statements, manipulação de tipos JSON/JSONB e operações com grandes objetos (binários).
 * JSON.org: Processar avaliações em JSONB, serialização/deserialização de comentários e manipulação de estruturas de dados complexas.
@@ -35,7 +35,9 @@ __O projeto utiliza as seguintes dependências principais, gerenciadas pelo Mave
 ***
 
 <h1> ESTRUTURA E FUNCIONAMENTO DO PROJETO </h1>
+
 ### Camadas Principais
+
 1. Camada de Modelos (negócio):
 __Classes:__
 * Conteudo.java: Modela conteúdos educacionais (vídeos, PDFs, imagens).
