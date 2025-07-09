@@ -31,7 +31,7 @@ Aplicação feita com banco de dados PostgreSQL e desenvolvida em Java com JDBC 
 ---
 
 <h1> ESTRUTURA E FUNCIONAMENTO DO PROJETO </h1>
-###Camadas Principais
+### Camadas Principais
 1. Camada de Modelos (negócio):
 __Classes:__
 * Conteudo.java: Modela conteúdos educacionais (vídeos, PDFs, imagens).
@@ -62,7 +62,7 @@ __Responsabilidades:__
 * Testar integração entre camadas.
 * Simular fluxos de uso.
 
-###Exemplo de Funcionamento
+### Exemplo de Funcionamento
 __Caso 1: Adicionar comentário a curso__
 1. `Main.java` cria objeto com dados do comentário
 2. Chama `CursoDAO.adicionarComentario()`
@@ -76,7 +76,7 @@ __Caso 2: Listar conteúdos do curso__
 3. Transforma ResultSet em objetos `Conteudo` 
 4. Retorna lista para apresentação
 
-##Benefícios da Estrutura
+## Benefícios da Estrutura
 1. __Separação de preocupações:__ Cada camada tem responsabilidade única.
 2. __Facilidade de manutenção:__ Modificações isoladas por camada.
 3. __Escalabilidade:__ Possibilidade de substituir componentes (ex: JPA no lugar de JDBC)
