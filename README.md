@@ -16,6 +16,7 @@ O sistema é uma aplicação Java para gestão de cursos online, com persistênc
 Aplicação feita com banco de dados PostgreSQL e desenvolvida em Java com JDBC (Maven).
 ***
 <h1> REQUISITOS E DEPENDÊNCIAS </h1>
+
 __O projeto utiliza as seguintes dependências principais, gerenciadas pelo Maven:__
 
 * PostgreSQL JDBC MAVEN: Para garantir uma conexão segura com o banco PostgreSQL, suporte a prepared statements, manipulação de tipos JSON/JSONB e operações com grandes objetos (binários).
